@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.chinmaysapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.chinmaysapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.chinmaysapplication.app.modules.registerscreentwo.ui.RegisterScreenTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.fingerprintscanner.ui.FingerPrintScannerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.profilechangepassword.ui.ProfileChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.onboading.ui.OnboadingActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.registerscreen.ui.RegisterScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.loginscreentwo.ui.LoginScreenTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.registerscreenone.ui.RegisterScreenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.loginscreenone.ui.LoginScreenOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.onboadingtwo.ui.OnboadingTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.homescreenaddtasktaskdescription.ui.HomeScreenAddTaskTaskDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.categoriesscreencreatecategorytwo.ui.CategoriesScreenCreateCategoryTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.homescreenemptyscreen.ui.HomeScreenEmptyScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.calandarscreenaddtasktaskdescription.ui.CalandarScreenAddTaskTaskDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.startscreen.ui.StartScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.taskscreenedittaskone.ui.TaskScreenEditTaskOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.categoriesscreencreatecategorythree.ui.CategoriesScreenCreateCategoryThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.focusmoodone.ui.FocusMoodOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.loginscreen.ui.LoginScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.homescreencontainer.ui.HomeScreenContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.registerscreenthree.ui.RegisterScreenThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.fingerprintscannererror.ui.FingerPrintScannerErrorActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.settings.ui.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.focusmood.ui.FocusMoodActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.taskscreenedittask.ui.TaskScreenEditTaskActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.onboadingone.ui.OnboadingOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.profile.ui.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.homescreenaddtasktasktitle.ui.HomeScreenAddTaskTaskTitleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.categoriesscreencreatecategoryone.ui.CategoriesScreenCreateCategoryOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.calandarscreenconpleted.ui.CalandarScreenConpletedActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.intro.ui.IntroActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.calandarscreenaddtasktasktitle.ui.CalandarScreenAddTaskTaskTitleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.categoriesscreencreatecategory.ui.CategoriesScreenCreateCategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.homescreenaddtask.ui.HomeScreenAddTaskActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.taskscreen.ui.TaskScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.chinmaysapplication.app.modules.profilechangename.ui.ProfileChangeNameActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

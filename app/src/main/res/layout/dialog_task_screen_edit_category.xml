@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="taskScreenEditCategoryVM" type="com.chinmaysapplication.app.modules.taskscreeneditcategory.data.viewmodel.TaskScreenEditCategoryVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearTaskScreenE"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearCategoryBox"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_128pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_84pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_900cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtChooseCategory"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{taskScreenEditCategoryVM.taskScreenEditCategoryModel.txtChooseCategory}"
+                style="@style/txtLatobold16" tools:text="@string/lbl_choose_category"/>
+            <View android:background="@color/gray_500"
+                android:id="@+id/lineDivider"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_316pxh"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnvector"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerListvector"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_16pxh}" tools:itemCount="3" tools:listitem="@layout/row_listvector1"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowhome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnhome"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_red_a100_radius_4"
+                            android:id="@+id/btnHome"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxh"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="@dimen/_64pxh"
+                            android:paddingHorizontal="@dimen/_18pxh"
+                            android:paddingVertical="@dimen/_18pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_home" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtHomeOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_marginStart="@dimen/_13pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditCategoryVM.taskScreenEditCategoryModel.txtHomeOne}"
+                            style="@style/txtLatomedium14" tools:text="@string/lbl_home"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnplus"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.4"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_teal_a201_radius_4"
+                            android:id="@+id/btnPlus"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_64pxh"
+                            android:layout_marginEnd="@dimen/_5pxh"
+                            android:layout_marginStart="@dimen/_5pxh"
+                            android:layout_width="@dimen/_64pxh"
+                            android:paddingHorizontal="@dimen/_16pxh"
+                            android:paddingVertical="@dimen/_16pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_plus_teal_600" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtCreateNew"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditCategoryVM.taskScreenEditCategoryModel.txtCreateNew}"
+                            style="@style/txtLatomedium14" tools:text="@string/lbl_create_new"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearRowcancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_34pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearCancelButton"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.24"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtCancel"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditCategoryVM.taskScreenEditCategoryModel.txtCancel}"
+                            style="@style/txtLatoregular16_2" tools:text="@string/lbl_cancel"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnEdit"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_57pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_edit"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_edit"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

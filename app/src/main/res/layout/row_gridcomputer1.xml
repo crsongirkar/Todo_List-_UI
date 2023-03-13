@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridcomputer1RowModel" type="com.chinmaysapplication.app.modules.taskscreenedittaskpriority.data.model.Gridcomputer1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumncomputer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleindigo_300cornerRadius">
+        <ImageView android:id="@+id/imageComputer"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_21pxh"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_15pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_computer"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_computer"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:singleLine="true"
+            android:text="@{gridcomputer1RowModel.txtOne}"
+            style="@style/txtLatoregular16" tools:text="@string/lbl_1"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeScreenRowModel" type="com.chinmaysapplication.app.modules.homescreen.data.model.HomeScreenRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsefifteen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylebluegray_900cornerRadius">
+        <View
+            android:background="@drawable/rectangle_bg_bluegray_900_border_white_a700_dd_radius_8"
+            android:id="@+id/viewEllipseFifteen"
+            android:layout_height="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_28pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_28pxv" android:layout_width="@dimen/_16pxh"/>
+        <FrameLayout android:id="@+id/frameStackdomathhomewor"
+            android:layout_height="@dimen/_54pxv"
+            android:layout_marginBottom="@dimen/_4pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_13pxv" android:layout_width="@dimen/_279pxh">
+            <LinearLayout android:id="@+id/linearColumndomathhomewor"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDoMathHomewor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{homeScreenRowModel.txtDoMathHomewor}"
+                    style="@style/txtLatoregular16" tools:text="@string/msg_do_math_homewor"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTodayAt1645"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{homeScreenRowModel.txtTodayAt1645}"
+                    style="@style/txtLatoregular14" tools:text="@string/lbl_today_at_16_45"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowframe187"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                <EditText
+                    android:background="@drawable/rectangle_bg_indigo_a101_radius_4"
+                    android:drawablePadding="@dimen/_6pxh"
+                    android:drawableStart="@drawable/img_mail"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_university"
+                    android:id="@+id/etFrame187"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.67"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_8pxh"
+                    android:paddingStart="@dimen/_8pxh"
+                    android:paddingTop="@dimen/_8pxv"
+                    android:singleLine="true"
+                    android:text="@={homeScreenRowModel.etFrame187Value}"
+                    android:textColorHint="@color/white_A700"
+                    style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                <LinearLayout android:id="@+id/linearRowcomputer"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_weight="0.33"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+                    <ImageView android:id="@+id/imageComputer"
+                        android:layout_height="@dimen/_12pxh"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_8pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_computer"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_computer"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_8pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.44"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_3pxh"
+                        android:singleLine="true"
+                        android:text="@{homeScreenRowModel.txtOne}"
+                        style="@style/txtLatoregular12_2" tools:text="@string/lbl_1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

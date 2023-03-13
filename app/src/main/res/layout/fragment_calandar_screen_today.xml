@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="calandarScreenTodayVM" type="com.chinmaysapplication.app.modules.calandarscreentoday.data.viewmodel.CalandarScreenTodayVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackcalendar"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_11pxv" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumncalendar"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearCalandarScreen"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_901">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCalendar"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtCalendar}"
+                    style="@style/txtLatoregular20" tools:text="@string/lbl_calendar"/>
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackvector"
+                    android:layout_height="@dimen/_107pxv"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="match_parent" style="@style/groupStylebluegray_900">
+                    <HorizontalScrollView android:fillViewport="true"
+                        android:id="@+id/horizontalScrollHorizontalscrollvector"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:scrollbars="none">
+                        <LinearLayout
+                            android:id="@+id/linearColumnvector"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content" android:orientation="vertical">
+                            <LinearLayout android:gravity="end"
+                                android:id="@+id/linearRowvector"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_33pxh"
+                                android:layout_marginStart="@dimen/_33pxh"
+                                android:layout_width="wrap_content" android:orientation="horizontal">
+                                <ImageView android:id="@+id/imageVector"
+                                    android:layout_height="@dimen/_11pxh"
+                                    android:layout_marginBottom="@dimen/_11pxv"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_width="@dimen/_5pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_white_a700_11x5"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_11x5"/>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnmonth"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_114pxh"
+                                    android:layout_weight="0.86"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:id="@+id/txtMonth"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtMonth}"
+                                    style="@style/txtLatoregular14_1" tools:text="@string/lbl_february"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtZipcode"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_23pxh"
+                                    android:layout_marginStart="@dimen/_24pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtZipcode}"
+                                    style="@style/txtLatoregular10" tools:text="@string/lbl_2022"/>
+                                </LinearLayout>
+                                <ImageView
+                                    android:id="@+id/imageVectorOne"
+                                    android:layout_height="@dimen/_11pxh"
+                                    android:layout_marginBottom="@dimen/_11pxv"
+                                    android:layout_marginStart="@dimen/_110pxh"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_width="@dimen/_5pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_white_a700_11x5"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_11x5"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="end"
+                                android:id="@+id/linearRowsun"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsun"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_50pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSUN"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_7pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSUN}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sun"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtSix"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginEnd="@dimen/_15pxh"
+                                    android:layout_marginStart="@dimen/_15pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSix}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_6"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/linearRowmon"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:orientation="horizontal" style="@style/groupStylegray_900cornerRadius">
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnmon"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_5pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_weight="9.86"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtMON"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtMON}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_mon"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtSeven"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSeven}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_7"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:id="@+id/linearRowsat"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="horizontal" style="@style/groupStylegray_900cornerRadius">
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsat"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="-0.1"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSAT"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_9pxh"
+                                    android:layout_marginStart="@dimen/_9pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSAT}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sat"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_15pxh"
+                                    android:layout_marginStart="@dimen/_16pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtFive}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_5"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:id="@+id/linearRowsunOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_83pxh"
+                                    android:layout_marginStart="@dimen/_360pxh"
+                                    android:layout_weight="-0.02"
+                                    android:layout_width="0dp" android:orientation="horizontal">
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsunOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSUNOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_7pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSUNOne}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sun"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtThirteen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtThirteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_13"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnmonOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginStart="@dimen/_16pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_weight="-0.38"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="start"
+                                    android:id="@+id/txtMONOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtMONOne}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_mon"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtFourteen"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_6pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtFourteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_14"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumntue"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_16pxh"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtTUE"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_8pxh"
+                                    android:layout_marginStart="@dimen/_8pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTUE}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_tue"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtFifteen"
+                                    android:layout_gravity="end"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_12pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtFifteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_15"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnwed"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtWED"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_5pxh"
+                                    android:layout_marginStart="@dimen/_5pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtWED}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_wed"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtSixteen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSixteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_16"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnthu"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtTHU"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_7pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTHU}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_thu"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtSeventeen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSeventeen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_17"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnfri"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtFRI"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtFRI}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_fri"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtEighteen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtEighteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_18"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsatOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="-0.5"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSATOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_9pxh"
+                                    android:layout_marginStart="@dimen/_9pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSATOne}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sat"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtNineteen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_12pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtNineteen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_19"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsunTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="-0.49"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSUNTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_7pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSUNTwo}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sun"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtTwenty"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_3pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTwenty}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_20"/>
+                                    </LinearLayout>
+                                    </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumntueOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtTUEOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_8pxh"
+                                    android:layout_marginStart="@dimen/_8pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTUEOne}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_tue"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtEight"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginEnd="@dimen/_15pxh"
+                                    android:layout_marginStart="@dimen/_15pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtEight}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_8"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnwedOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStyleindigo_300cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtWEDOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_5pxh"
+                                    android:layout_marginStart="@dimen/_5pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtWEDOne}"
+                                    style="@style/txtLatobold12_2" tools:text="@string/lbl_wed"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginEnd="@dimen/_15pxh"
+                                    android:layout_marginStart="@dimen/_15pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtNine}"
+                                    style="@style/txtLatobold14_1" tools:text="@string/lbl_9"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnthuOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtTHUOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_7pxh"
+                                    android:layout_marginStart="@dimen/_7pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTHUOne}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_thu"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtTen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTen}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_10"/>
+                                    <View
+                                    android:background="@drawable/rectangle_bg_indigo_300_radius_2"
+                                    android:id="@+id/viewEllipseTwentyFive"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_4pxh"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_4pxh"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnfriOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="0.14"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtFRIOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtFRIOne}"
+                                    style="@style/txtLatobold12_1" tools:text="@string/lbl_fri"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtEleven"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_4pxv"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginStart="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtEleven}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_11"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/linearColumnsatTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_401pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_weight="0.15"
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                                    <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSATTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_9pxh"
+                                    android:layout_marginStart="@dimen/_9pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtSATTwo}"
+                                    style="@style/txtLatobold12" tools:text="@string/lbl_sat"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtTwelve"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_6pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{calandarScreenTodayVM.calandarScreenTodayModel.txtTwelve}"
+                                    style="@style/txtLatobold14" tools:text="@string/lbl_12"/>
+                                    <View
+                                    android:background="@drawable/rectangle_bg_indigo_300_radius_2"
+                                    android:id="@+id/viewEllipseTwentyFiveOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_4pxh"
+                                    android:layout_marginBottom="@dimen/_3pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_4pxh"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearRowtoday"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylegray_800cornerRadius">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnToday"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_today"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_today"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnCompleted"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_completed"
+                        android:textAllCaps="false"
+                        style="@style/btnRoundedOutline" tools:text="@string/lbl_completed"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/recyclerListellipsefifteen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_16pxh}" tools:itemCount="3" tools:listitem="@layout/row_listellipsefifteen"/>
+                <View android:id="@+id/viewGroup308"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_132pxv"
+                    android:layout_marginTop="@dimen/_116pxv" android:layout_width="@dimen/_375pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/indigo_300"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_68pxv"
+            android:layout_marginEnd="@dimen/_155pxh"
+            android:layout_marginStart="@dimen/_155pxh"
+            android:layout_marginTop="@dimen/_68pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_64pxh"
+            app:srcCompat="@drawable/img_plus" app:tint="@color/white_A700"/>
+    </FrameLayout>
+</layout>
