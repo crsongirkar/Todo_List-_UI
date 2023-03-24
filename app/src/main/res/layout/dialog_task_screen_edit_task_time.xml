@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="taskScreenEditTaskTimeVM" type="com.chinmaysapplication.app.modules.taskscreenedittasktime.data.viewmodel.TaskScreenEditTaskTimeVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearTaskScreenE"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearChooseTime"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_301pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_261pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_900cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtChooseTime"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_43pxh"
+                android:layout_marginStart="@dimen/_43pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtChooseTime}"
+                style="@style/txtLatomedium16" tools:text="@string/lbl_choose_time"/>
+            <View android:background="@color/gray_500"
+                android:id="@+id/lineDivider"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_11pxv" android:layout_width="@dimen/_312pxh"/>
+            <LinearLayout android:id="@+id/linearColumnnine"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_43pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowseven"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackseven"
+                        android:layout_height="@dimen/_64pxv" android:layout_width="@dimen/_64pxh">
+                        <LinearLayout
+                            android:id="@+id/linearColumnseven"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSeven"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_18pxh"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtSeven}"
+                                style="@style/txtLatosemibold16" tools:text="@string/lbl_07"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtEight"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_17pxv"
+                                android:layout_marginEnd="@dimen/_18pxh"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtEight}"
+                                style="@style/txtLatosemibold24" tools:text="@string/lbl_08"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtNine"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_22pxh"
+                            android:layout_marginStart="@dimen/_22pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtNine}"
+                            style="@style/txtLatosemibold16" tools:text="@string/lbl_09"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16pxv"
+                        android:layout_marginStart="@dimen/_13pxh"
+                        android:layout_marginTop="@dimen/_22pxv"
+                        android:layout_weight="0.03"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtThree}"
+                        style="@style/txtLatosemibold20" tools:text="@string/lbl"/>
+                    <FrameLayout android:id="@+id/frameStacknineteen"
+                        android:layout_height="@dimen/_64pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_14pxh" android:layout_width="@dimen/_64pxh">
+                        <LinearLayout
+                            android:id="@+id/linearColumnnineteen"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylegray_900cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtNineteen"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_18pxh"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtNineteen}"
+                                style="@style/txtLatosemibold16" tools:text="@string/lbl_19"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTwenty"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_17pxv"
+                                android:layout_marginEnd="@dimen/_18pxh"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_width="wrap_content"
+                                android:singleLine="true"
+                                android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtTwenty}"
+                                style="@style/txtLatosemibold24" tools:text="@string/lbl_20"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTwentyOne"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_22pxh"
+                            android:layout_marginStart="@dimen/_22pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtTwentyOne}"
+                            style="@style/txtLatosemibold16" tools:text="@string/lbl_21"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStackrectangle117"
+                        android:layout_height="@dimen/_64pxv"
+                        android:layout_marginStart="@dimen/_16pxh" android:layout_width="@dimen/_64pxh">
+                        <View
+                            android:background="@drawable/rectangle_bg_gray_900_radius_4"
+                            android:id="@+id/viewRectangle117"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_64pxh"
+                            android:layout_marginBottom="@dimen/_1pxv" android:layout_width="@dimen/_64pxh"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPM"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_19pxh"
+                            android:layout_marginStart="@dimen/_19pxh"
+                            android:layout_marginTop="@dimen/_10pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtPM}"
+                            style="@style/txtLatosemibold16" tools:text="@string/lbl_pm"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtAM"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_18pxv"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_17pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtAM}"
+                            style="@style/txtLatosemibold24" tools:text="@string/lbl_am"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="end"
+                    android:id="@+id/linearRowcancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearCancelButton"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.24"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtCancel"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{taskScreenEditTaskTimeVM.taskScreenEditTaskTimeModel.txtCancel}"
+                            style="@style/txtLatoregular16_2" tools:text="@string/lbl_cancel"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnEdit"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_57pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingStart="@dimen/_30pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_edit"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_edit"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

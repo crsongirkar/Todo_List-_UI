@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="categoriesScreenCreateCategoryOneVM" type="com.chinmaysapplication.app.modules.categoriesscreencreatecategoryone.data.viewmodel.CategoriesScreenCreateCategoryOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCategoriesscre"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_901">
+        <HorizontalScrollView android:fillViewport="true"
+            android:id="@+id/horizontalScrollHorizontalscrollcreatenewcate"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent" android:scrollbars="none">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumncreatenewcate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCreatenewcate"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@{categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.txtCreatenewcate}"
+                    style="@style/txtLatobold20" tools:text="@string/msg_create_new_cate"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCategoryname"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.txtCategoryname}"
+                    style="@style/txtLatoregular16" tools:text="@string/lbl_category_name"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_gray_902_border_white_a700_radius_4"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_family"
+                    android:id="@+id/etSearchBar"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_12pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@={categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.etSearchBarValue}"
+                    android:textColorHint="@color/white_A700_dd"
+                    style="@style/etSolidRoundedOutline_4" tools:ignore="Autofill"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCategoryicon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.txtCategoryicon}"
+                    style="@style/txtLatoregular16" tools:text="@string/lbl_category_icon"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnChooseIconFromLibrary"
+                    android:layout_height="@dimen/_37pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_154pxh"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_16pxh"
+                    android:paddingStart="@dimen/_16pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/msg_choose_icon_fro"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_3" tools:text="@string/msg_choose_icon_fro"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCategorycolor"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_4pxh"
+                    android:singleLine="true"
+                    android:text="@{categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.txtCategorycolor}"
+                    style="@style/txtLatoregular16" tools:text="@string/msg_category_color"/>
+                <LinearLayout android:id="@+id/linearRowellipsesixteen"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <View
+                        android:background="@drawable/rectangle_bg_lime_600_radius_18"
+                        android:id="@+id/viewEllipseSixteen"
+                        android:layout_height="@dimen/_36pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_light_green_600_radius_18"
+                        android:id="@+id/viewEllipseSeventeen"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_teal_300_radius_18"
+                        android:id="@+id/viewEllipseEighteen"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_indigo_400_radius_18"
+                        android:id="@+id/viewEllipseNineteen"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_teal_301_radius_18"
+                        android:id="@+id/viewEllipseTwenty"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_deep_orange_400_radius_18"
+                        android:id="@+id/viewEllipseTwentyOne"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_purple_400_radius_18"
+                        android:id="@+id/viewEllipseTwentyTwo"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh" android:layout_width="@dimen/_36pxh"/>
+                    <ImageView android:id="@+id/imageEllipseTwentyThree"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_width="@dimen/_36pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_ellipse23_36x36"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse23_36x36"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowcancel"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_45pxh"
+                    android:layout_marginStart="@dimen/_53pxh"
+                    android:layout_marginTop="@dimen/_325pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearCreateCategory"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_13pxv"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_weight="0.24"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtCancel"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{categoriesScreenCreateCategoryOneVM.categoriesScreenCreateCategoryOneModel.txtCancel}"
+                            style="@style/txtLatoregular16_2" tools:text="@string/lbl_cancel"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnCreateCategoryOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_73pxh"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_14pxv"
+                        android:paddingEnd="@dimen/_18pxh"
+                        android:paddingStart="@dimen/_18pxh"
+                        android:paddingTop="@dimen/_14pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_create_category"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRounded" tools:text="@string/lbl_create_category"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+</layout>

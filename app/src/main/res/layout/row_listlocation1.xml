@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlocation1RowModel" type="com.chinmaysapplication.app.modules.taskscreenedittaskone.data.model.Listlocation1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearTaskCategory"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearRowlocation"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_2pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.53" android:layout_width="0dp" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageLocation"
+                android:layout_height="@dimen/_19pxh"
+                android:layout_marginBottom="@dimen/_2pxv"
+                android:layout_width="@dimen/_19pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_location_white_a700"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_location_white_a700"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTaskCategory"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_weight="0.84" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{listlocation1RowModel.txtTaskCategory}"
+                style="@style/txtLatoregular16_1" tools:text="@string/lbl_task_category"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearRowmail"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_75pxh"
+            android:layout_weight="0.47" android:layout_width="0dp"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700_35cornerRadius">
+            <ImageView android:id="@+id/imageMail"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:layout_width="@dimen/_21pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_mail_blue_300"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_mail_blue_300"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUniversity"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_weight="0.71" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listlocation1RowModel.txtUniversity}"
+                style="@style/txtLatoregular12_1" tools:text="@string/lbl_university"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

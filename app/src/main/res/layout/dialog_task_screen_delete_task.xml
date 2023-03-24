@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="taskScreenDeleteTaskVM" type="com.chinmaysapplication.app.modules.taskscreendeletetask.data.viewmodel.TaskScreenDeleteTaskVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearTaskScreenD"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearDeleteBox"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_306pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_264pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylebluegray_900cornerRadius">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDeleteTask"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_124pxh"
+                android:layout_marginStart="@dimen/_125pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="@{taskScreenDeleteTaskVM.taskScreenDeleteTaskModel.txtDeleteTask}"
+                style="@style/txtLatobold16" tools:text="@string/lbl_delete_task"/>
+            <View android:background="@color/gray_500"
+                android:id="@+id/lineDivider"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_9pxv" android:layout_width="@dimen/_312pxh"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_7pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_12pxh"
+                android:text="@{taskScreenDeleteTaskVM.taskScreenDeleteTaskModel.txtDescription}"
+                style="@style/txtLatomedium18" tools:text="@string/msg_are_you_sure_yo"/>
+            <LinearLayout android:id="@+id/linearRowcancel"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearCancelButton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginStart="@dimen/_47pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_weight="0.24"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtCancel"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{taskScreenDeleteTaskVM.taskScreenDeleteTaskModel.txtCancel}"
+                        style="@style/txtLatoregular16_2" tools:text="@string/lbl_cancel"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnDelete"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_62pxh"
+                    android:layout_weight="0.76"
+                    android:layout_width="0dp"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_delete"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_delete"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

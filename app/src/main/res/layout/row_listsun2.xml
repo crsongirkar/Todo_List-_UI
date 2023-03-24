@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listsun2RowModel" type="com.chinmaysapplication.app.modules.calandarscreenaddtaskchoosedate.data.model.Listsun2RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnsun"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal" android:id="@+id/txtSUN"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_2pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listsun2RowModel.txtSUN}"
+            style="@style/txtLatobold10" tools:text="@string/lbl_sun"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnthirty"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5pxh"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtThirty"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listsun2RowModel.txtThirty}"
+                style="@style/txtLatobold12_3" tools:text="@string/lbl_30"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtSix"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingEnd="@dimen/_8pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{listsun2RowModel.txtSix}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_6"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtThirteen"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingEnd="@dimen/_5pxh"
+            android:paddingStart="@dimen/_5pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{listsun2RowModel.txtThirteen}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_13"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTwenty"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingEnd="@dimen/_5pxh"
+            android:paddingStart="@dimen/_5pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{listsun2RowModel.txtTwenty}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_20"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTwentySeven"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingEnd="@dimen/_5pxh"
+            android:paddingStart="@dimen/_5pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{listsun2RowModel.txtTwentySeven}"
+            style="@style/txtSolidRounded" tools:text="@string/lbl_27"/>
+    </LinearLayout>
+</layout>

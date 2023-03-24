@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="introVM" type="com.chinmaysapplication.app.modules.intro.data.viewmodel.IntroVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIntro"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_901">
+        <ImageView android:id="@+id/imageCheckmark"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_80pxh"
+            android:layout_marginEnd="@dimen/_117pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_marginTop="@dimen/_287pxv"
+            android:layout_width="@dimen/_95pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_checkmark"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtUpTodo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_117pxh"
+            android:layout_marginStart="@dimen/_117pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{introVM.introModel.txtUpTodo}"
+            style="@style/txtLatobold40" tools:text="@string/lbl_uptodo"/>
+    </LinearLayout>
+</layout>
